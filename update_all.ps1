@@ -95,13 +95,13 @@ $Options = [ordered]@{
     BeforeEach = {
         param($PackageName, $Options )
 
-        $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?v(?:\:(?<version>.+))?$"
+        $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
         $p = $Options.ForcedPackages | ? { $_ -match $pattern }
         if (!$p) { return }
 
         $global:au_Force         = $true
         $global:au_IncludeStream = $Matches['stream']
-        $global:au_Version       = $Matches['version']
+        $global:au_Version       = $Matches['version'].split('v')[1] # Remove v from v0.0.0
     }
 }
 
