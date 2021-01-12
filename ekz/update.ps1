@@ -29,6 +29,7 @@ function global:au_GetLatest {
                         $fullUrl.Substring($fullIndex)
                    } |
                 Select -First 1
+    $version = $version.split('v')[1]
 
     $url = "https://github.com/chanwit/ekz/releases/download/v$version/ekz_$version_windows_amd64.zip"
 

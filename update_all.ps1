@@ -101,7 +101,7 @@ $Options = [ordered]@{
 
         $global:au_Force         = $true
         $global:au_IncludeStream = $Matches['stream']
-        $global:au_Version       = $Matches['version'].split('v')[1] # Remove v from v0.0.0
+        $global:au_Version       = $Matches['version']
     }
 }
 
