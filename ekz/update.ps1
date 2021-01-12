@@ -32,7 +32,7 @@ function global:au_GetLatest {
 
     $version = $version.split('v')[1]
 
-    $url = "https://github.com/chanwit/ekz/releases/download/v$version/ekz_$version_windows_amd64.zip"
+    $url = "https://github.com/chanwit/ekz/releases/download/v$version/ekz_${version}_windows_amd64.zip"
 
     return @{
         URL64        = $url
