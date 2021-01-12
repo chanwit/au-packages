@@ -1,7 +1,7 @@
 import-module au
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$releases    = 'https://github.com/weaveworks/eksctl/releases'
+$releases    = 'https://github.com/chanwit/ekz/releases'
 
 function global:au_SearchReplace {
    @{
@@ -30,12 +30,12 @@ function global:au_GetLatest {
                    } |
                 Select -First 1
 
-    $url = "https://github.com/weaveworks/eksctl/releases/download/$version/eksctl_Windows_amd64.zip"
+    $url = "https://github.com/chanwit/ekz/releases/download/v$version/ekz_$version_windows_amd64.zip"
 
     return @{
         URL64        = $url
         Version      = $version
-        ReleaseNotes = "$releases/tag/${version}"
+        ReleaseNotes = "$releases/tag/v${version}"
     }
 }
 

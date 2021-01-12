@@ -19,9 +19,9 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: derwasp/au-packages
+  github_user_repo: chanwit/au-packages
   github_api_key:
-    secure: qCzmAZw5Jo9ttv5Qz5PHb3BrNGJ/4bS0pcmIKN0bBDY3VnJNC2Fl0ISaTopB0cDZ #https://ci.appveyor.com/tools/encrypt
+    secure: HI/8uxB+2FxRRhZobFBYJViPDrB9JfAbHtV+xbkvdpmDuGTj1g0Yua/RKYIivs+P #https://ci.appveyor.com/tools/encrypt
 
 
   # # Mail credentials - for error notifications
@@ -35,18 +35,18 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id: 2ab3f1550e4fba3bb189692d6777c1bc
+  gist_id: 04b7a680d5866ed9058d925f1746640c
 
   # Force test: gist id for test results
   gist_id_test:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: S1uYxrFn5ceOTb74gGH1lTzJuD1UYMYNXfxe4fZQ3aSW+poIjeNGsRNlNzyaQKoX # https://ci.appveyor.com/tools/encrypt
+    secure: g2oqUvgU/u81TDrs7ci/CLEQQva+tC+gSBweBo7YL1sbDWq0xl++qx7lH9PZ+sL5 # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "nbcwasp@gmail.com"
-- git config --global user.name "derwasp"
+- git config --global user.email "chanwit@gmail.com"
+- git config --global user.name "chanwit"
 - git config --global core.safecrlf false
 
 install:

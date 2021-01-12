@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ekz</id>
+    <title>ekz</title>
+    <version>0.0.2</version>
+    <authors>chanwit</authors>
+    <owners>chanwit</owners>
+    <summary>ekz is a command line to create and manage EKS-D clusters on desktop.</summary>
+    <projectUrl>https://github.com/chanwit/ekz/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ekz is a command line to create and manage EKS-D clusters on desktop.</description>
+    <tags>ekz eks kubernetes aws eks-d</tags>
+    <packageSourceUrl>https://github.com/chanwit/au-packages/tree/master/ekz</packageSourceUrl>
+    <projectSourceUrl>https://github.com/chanwit/ekz</projectSourceUrl>
+    <licenseUrl>https://github.com/chanwit/ekz/blob/master/LICENSE</licenseUrl>
+    <bugTrackerUrl>https://github.com/chanwit/ekz/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+  <file src="tools\**" target="tools" />
+  </files>
+</package>
