@@ -6,8 +6,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageArgs = @{
   packageName            = 'ekz'
-  url64bit               = 'https://github.com/chanwit/ekz/releases/download/v0.0.2/ekz_0.0.2_windows_amd64.zip'
-  checksum64             = 'fc8a3d97cf9897a7bfaab4119e818a02ff7047cab0c213e3e46bad27d2fae479'
+  url64bit               = 'https://github.com/chanwit/ekz/releases/download/v0.1.7/ekz_0.1.7_windows_amd64.zip'
+  checksum64             = '47b3ebf4375ddbda7dfef6f6566c4926143fe66dc79f8977320815c45981cecf'
   checksumType64         = 'sha256'
   unzipLocation          = $installDir
 }
