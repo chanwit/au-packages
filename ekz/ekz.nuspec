@@ -3,7 +3,7 @@
   <metadata>
     <id>ekz</id>
     <title>ekz</title>
-    <version>0.7.0</version>
+    <version>0.8.0</version>
     <authors>chanwit</authors>
     <owners>chanwit</owners>
     <summary>ekz is a command line to create and manage EKS-D clusters on desktop.</summary>
